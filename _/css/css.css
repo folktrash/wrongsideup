@@ -15,13 +15,16 @@ html, body, h1, h2 {margin:0;padding:0;}
 body {
 	font-family:Tung;
 	font-size:1.0em;
-	background: #fff url(../img/bg.jpg) no-repeat top right;
+	background-color:#fff;
+	background-image: url(../img/bg.jpg);
+	background-repeat:no-repeat;
+	background-position:100% 0;
+	background-size:100%;
 	padding:0.8em;
 }
 
 h1 {font-size:4.0em;color:#fff;}
-
-h2 {font-size:1.8em;}
+h2 {font-size:1.8em;letter-spacing:-1px;}
 
 .producer {
 	position:absolute;bottom:0.8em;display:block;width:100px;height:100px;
@@ -43,7 +46,10 @@ h2 {font-size:1.8em;}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {/* retina */
 
-	body {background-image:url(../img/bg-retina.jpg);}
+	body {
+		background-image:url(../img/bg-retina.jpg);
+
+	}
 
 
 }
