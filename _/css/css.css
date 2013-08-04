@@ -23,7 +23,7 @@ body {
 	padding:0.8em;
 }
 
-h1 {font-size:4.0em;color:#fff;}
+h1 {font-size:4.0em;color:#fff;font-weight:normal;}
 h2 {font-size:1.8em;letter-spacing:-1px;}
 
 .producer {
@@ -45,18 +45,25 @@ h2 {font-size:1.8em;letter-spacing:-1px;}
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {/* retina */
-
-	body {
-		background-image:url(../img/bg-retina.jpg);
-
-	}
-
-
+	body {background-image:url(../img/bg-retina.jpg);}
 }
 
 
-@media only screen and (min-width: 801px) {/* desktop*/
+@media only screen and (min-width: 768px) {/**/
 
+	body {
+		background-image:url(../img/bg-hd.jpg);
+		background-size:auto;
+		padding-right:1.8em;
+	}
 
+	h1, h2 {text-align:right;}
+
+	h1 {font-size:7.0em;}
+	h2 {font-size:3.0em;font-weight:normal;color:#000;color:rgba(0,0,0,0.8);}
+
+	.producer {bottom:1.8em;width:200px;height:200px;}
+	.producer-clp {left:1.8em;}
+	.producer-hdm {right:1.8em;}
 
 }
