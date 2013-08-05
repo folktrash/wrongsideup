@@ -3,10 +3,7 @@ html, body, h1, h2 {margin:0;padding:0;}
 @font-face {
     font-family:'Tung';
     src: url('../font/tung.eot');
-    src: url('../font/tung.eot?#iefix') format('embedded-opentype'),
-         url('../font/tung.woff') format('woff'),
-         url('../font/tung.ttf') format('truetype'),
-         url('../font/tung.svg#tung') format('svg');
+    src: url('../font/tung.eot?#iefix') format('embedded-opentype'), url('../font/tung.woff') format('woff'), url('../font/tung.ttf') format('truetype'), url('../font/tung.svg#tung') format('svg');
     font-weight:normal;font-style:normal;
 }
 
@@ -32,22 +29,12 @@ h2 {font-size:1.8em;letter-spacing:-1px;}
 	background-size:100%;
 }
 
-.producer-clp {
-	left:0.8em;
-	background-image:url(../img/clp.png);
-}
-
-.producer-hdm {
-	right:0.8em;
-	background-image:url(../img/hdm.png);
-	background-position: 100% 100%;
-	background-size:34%;
-}
+.producer-clp {left:0.8em;background-image:url(../img/clp.png);}
+.producer-hdm {right:0.8em;background-image:url(../img/hdm.png);background-position: 100% 100%;background-size:34%;}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {/* retina */
 	body {background-image:url(../img/bg-retina.jpg);}
 }
-
 
 @media only screen and (min-width: 768px) {/**/
 
@@ -66,4 +53,8 @@ h2 {font-size:1.8em;letter-spacing:-1px;}
 	.producer-clp {left:1.8em;}
 	.producer-hdm {right:1.8em;}
 
+}
+
+@media only screen and (min-width: 2001px) {/*HDM*/
+	body {background-size:100%;}
 }
