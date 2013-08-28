@@ -38,10 +38,19 @@ h2 {font-size:1.8em;letter-spacing:-1px;}
 
 @media only screen and (min-width: 768px) {/**/
 
+
+	/* full screen video */
+	html {
+		height:100%;
+	}
+
 	body {
 		background-image:url(../img/bg-hd.jpg);
 		background-size:auto;
 		padding-right:1.8em;
+
+		/* full screen video */
+		margin:0;padding:0;height:100%;padding-right:0;
 	}
 
 	h1, h2 {text-align:right;}
@@ -50,8 +59,8 @@ h2 {font-size:1.8em;letter-spacing:-1px;}
 	h2 {font-size:3.0em;font-weight:normal;color:#000;color:rgba(0,0,0,0.8);}
 
 	.producer {bottom:1.8em;width:200px;height:200px;}
-	.producer-clp {left:1.8em;}
-	.producer-hdm {right:1.8em;}
+	.producer-clp {left:1.8em;/*fsv*/left:3.0%;}
+	.producer-hdm {right:1.8em;/*fsv*/right:3.0%}
 
 }
 
